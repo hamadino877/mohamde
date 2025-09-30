@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم السباحة مع الكابتن محمد خالد</title>
+    <!-- استيراد خط Tajawal من جوجل فونت (خط عربي حديث) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- تحميل Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- تخصيص إعدادات Tailwind للون والخلفية والخطوط الجديدة -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#005073', // Deep Ocean Blue - لون أساسي عميق
+                        'accent-highlight': '#2A9D8F', // Calming Aqua - لون تمييز هادئ
+                        'cta-gold': '#E9C46A', // Sand Gold - لون جذاب لزر الإجراء
+                        'background-light': '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'Arial', 'sans-serif'], // تطبيق خط Tajawal
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* لضمان تطبيق الخط و RTL على جميع العناصر */
+        body {
+            font-family: 'Tajawal', Tahoma, Arial, sans-serif;
+            text-align: right;
+            background-color: #F8FAFC;
+        }
+        /* تصميم زر الإجراء الأساسي مع ظل متناسق مع اللون الجديد */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 80, 115, 0.4); /* ظل بلون Primary Blue الجديد */
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 80, 115, 0.6);
+        }
+        /* تأثيرات بسيطة على الصور */
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800">
+
+    <!-- 1. القسم العلوي (Hero Section) -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-8 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- النص وزر الإجراء -->
+            <div class="md:w-1/2 order-2 md:order-1">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary-blue leading-tight mb-4">
+                    تعلم السباحة بثقة وإتقان مع الكابتن محمد خالد: مدربك الخاص بخبرة 7 سنوات.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    أهلاً بك في عالم السباحة! سواء كنت تبدأ من الصفر أو تسعى لتحسين تقنياتك، نقدم برامج تدريب شخصية في دبي والإمارات مصممة لضمان تقدمك.
+                </p>
+                <!-- زر الإجراء (CTA) - باستخدام لون cta-gold الجديد -->
+                <a href="#contact" class="inline-block cta-button bg-cta-gold text-primary-blue font-extrabold text-xl py-3 px-8 rounded-full hover:bg-[#d8b05e]">
+                    ابدأ رحلتك المائية الآن
+                </a>
+            </div>
+
+            <!-- الصورة الرئيسية (Hero Image) -->
+            <div class="md:w-1/2 order-1 md:order-2 w-full">
+                <img 
+                    src="https://res.cloudinary.com/dsi7eogpq/image/upload/v1759262652/%D8%B5%D9%88%D8%B1%D8%A9_%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D8%A8%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE_1447-03-30_%D9%81%D9%8A_12.46.50_9666219c_nvd9bh.jpg" 
+                    alt="صورة الكابتن محمد وهو يبتسم بثقة" 
+                    class="w-full h-auto object-cover rounded-2xl shadow-2xl border-4 border-white"
+                >
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 2. قسم "من هو الكابتن محمد؟" – المصداقية والخبرة -->
+        <section class="py-16 bg-background-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-4 border-accent-highlight inline-block pb-1">
+                    من هو الكابتن محمد؟
+                </h2>
+                
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl">
+                    مرحباً بك، أنا محمد، شغفي هو تحويل الخوف من الماء إلى متعة وإتقان. على مدار 7 سنوات، قمت بتدريب مئات الأفراد من جميع الأعمار والمستويات. أحمل رؤية واحدة: أن تكون السباحة أسلوب حياة، لا مجرد مهارة.
+                </p>
+
+                <!-- نقاط القوة والخبرة -->
+                <div class="grid md:grid-cols-3 gap-6 text-gray-700">
+                    <!-- نقطة 1 -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <span class="text-primary-blue text-3xl mb-3 block">🏊</span>
+                        <h3 class="font-bold text-xl mb-2">خبرة إجمالية 7 سنوات</h3>
+                        <p>5 سنوات في مصر (المنافسات والتدريب الأساسي) وسنتان تركيز في الإمارات (برامج التدريب الشخصي والإنقاذ).</p>
+                    </div>
+                    <!-- نقطة 2 -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <span class="text-primary-blue text-3xl mb-3 block">👨‍👩‍👧‍👦</span>
+                        <h3 class="font-bold text-xl mb-2">تخصص في جميع الأعمار</h3>
+                        <p>برامج خاصة للأطفال (لتأسيس الثقة والأمان) وبرامج متقدمة للكبار (للياقة وتحسين الأداء).</p>
+                    </div>
+                    <!-- نقطة 3 -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <span class="text-primary-blue text-3xl mb-3 block">💡</span>
+                        <h3 class="font-bold text-xl mb-2">التفرد في المنهج</h3>
+                        <p>التركيز على التقنية السليمة أولاً لضمان الكفاءة وتقليل الإصابات، مع برامج مخصصة لكل متدرب.</p>
+                    </div>
+                </div>
+
+                <!-- الأمان والثقة - باستخدام لون التمييز الجديد -->
+                 <div class="mt-8 p-4 bg-accent-highlight/10 text-accent-highlight rounded-lg font-medium flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.023 12.023 0 005.474 15.688a12.016 12.016 0 0012.052 0c-.822-2.185-1.121-4.492-.764-7.854z" />
+                    </svg>
+                    <span>مدرب معتمد ومنقذ دولي - الأمان هو أولويتنا القصوى في كل حصة تدريبية.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. قسم "أعمالنا المصورة" – معرض الصور (Gallery) -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">أعمالنا المصورة: بناء المهارات والثقة</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- صورة 1: تفاعل المدرب -->
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-xl">
+                        <img src="https://res.cloudinary.com/dsi7eogpq/image/upload/v1759263398/gemini-2.5-flash-image-preview_nano-banana__%D8%A7%D8%B1%D9%8A%D8%AF_%D8%B5%D9%88%D8%B1%D8%A9_%D9%84%D9%83%D8%A7%D9%8A%D8%AA%D9%86_%D8%B3%D8%A8%D8%A7_1_mhr8ie.png" alt="صورة لتصحيح وضعية السباحة" class="w-full h-48 object-cover">
+                        <p class="p-3 bg-white text-sm font-medium text-gray-600">
+                            تصحيح وضعية الـ Free Style لزيادة السرعة والكفاءة.
+                        </p>
+                    </div>
+                    
+                    <!-- صورة 2: الإنجاز -->
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-xl">
+                        <img src="https://res.cloudinary.com/dsi7eogpq/image/upload/v1759263517/Gemini_Generated_Image_do2ukvdo2ukvdo2u_wvfaxt.png" alt="صورة لمتدرب سعيد بعد الإنجاز" class="w-full h-48 object-cover">
+                        <p class="p-3 bg-white text-sm font-medium text-gray-600">
+                            لحظات بناء الثقة في الماء: متدرب ينجز أول مسافة له بنجاح.
+                        </p>
+                    </div>
+
+                    <!-- صورة 3: البيئة -->
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-xl">
+                        <img src="https://res.cloudinary.com/dsi7eogpq/image/upload/v1759263582/Gemini_Generated_Image_wghyb7wghyb7wghy_sadrsp.png" alt="صورة لحوض السباحة" class="w-full h-48 object-cover">
+                        <p class="p-3 bg-white text-sm font-medium text-gray-600">
+                            بيئة تدريب آمنة ونظيفة، لتركيز كامل على التعلم.
+                        </p>
+                    </div>
+
+                    <!-- صورة 4: السلامة -->
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-xl">
+                        <img src="https://res.cloudinary.com/dsi7eogpq/image/upload/v1759263582/Gemini_Generated_Image_hxutj6hxutj6hxut_kdrvaa.png" alt="صورة لأدوات التدريب" class="w-full h-48 object-cover">
+                        <p class="p-3 bg-white text-sm font-medium text-gray-600">
+                            استخدام أدوات تدريب وسلامة احترافية لتعزيز الأداء.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. قسم "ماذا ستحصل عليه؟" – الخدمات والبرامج -->
+        <section class="py-16 bg-primary-blue text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">ماذا ستحصل عليه؟ برامج تدريب مخصصة</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- البرنامج 1 -->
+                    <div class="bg-white text-gray-800 p-6 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-primary-blue mb-2">تأسيس السباحة الآمنة</h3>
+                        <p class="text-gray-600 mb-4">
+                            تجاوز الخوف من الماء، وتعلم الأساسيات، وتحقيق الطفو الآمن، والاستقلال في الماء.
+                        </p>
+                        <!-- استخدام لون CTA Gold الجديد للتمييز -->
+                        <span class="inline-block bg-cta-gold text-primary-blue px-3 py-1 text-sm rounded-full font-semibold">
+                            المبتدئين والأطفال
+                        </span>
+                    </div>
+
+                    <!-- البرنامج 2 -->
+                    <div class="bg-white text-gray-800 p-6 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-primary-blue mb-2">تقنيات السباحة المتقدمة</h3>
+                        <p class="text-gray-600 mb-4">
+                            إتقان أربع أنواع سباحة (حر، صدر، ظهر، فراشة)، زيادة التحمل، وتحسين السرعة.
+                        </p>
+                        <!-- استخدام لون CTA Gold الجديد للتمييز -->
+                        <span class="inline-block bg-cta-gold text-primary-blue px-3 py-1 text-sm rounded-full font-semibold">
+                            السباحون المتوسطون والرياضيون
+                        </span>
+                    </div>
+
+                    <!-- البرنامج 3 -->
+                    <div class="bg-white text-gray-800 p-6 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-primary-blue mb-2">السباحة للياقة البدنية</h3>
+                        <p class="text-gray-600 mb-4">
+                            برنامج تدريب مائي مكثف لزيادة اللياقة، حرق السعرات، وتحسين صحة القلب والمفاصل.
+                        </p>
+                        <!-- استخدام لون CTA Gold الجديد للتمييز -->
+                        <span class="inline-block bg-cta-gold text-primary-blue px-3 py-1 text-sm rounded-full font-semibold">
+                            البالغون المهتمون باللياقة
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- التركيز على القيمة -->
+                <div class="mt-12 text-center text-xl font-semibold bg-white/20 p-4 rounded-lg">
+                    التركيز على القيمة: هدفنا هو أن تصبح مستقلاً وآمناً في الماء خلال مدة محددة، وليس مجرد حساب عدد الحصص.
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. قسم "شهادات العملاء" (Testimonials) -->
+        <section class="py-16 bg-background-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">قصص نجاح من عملائنا</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    
+                    <!-- شهادة 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border-t-4 border-accent-highlight">
+                        <p class="text-xl italic text-gray-700 mb-4">
+                            "لم أكن أصدق أنني سأتمكن من السباحة بعد سن الـ 40. الكابتن محمد جعل الأمر سهلاً وممتعًا، وبفضل منهجه الفردي تجاوزت خوفي في حصص قليلة. شكرًا لك!"
+                        </p>
+                        <p class="font-bold text-accent-highlight">- أ. سارة، دبي</p>
+                    </div>
+
+                    <!-- شهادة 2 (لإكمال العرض) -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border-t-4 border-accent-highlight">
+                        <p class="text-xl italic text-gray-700 mb-4">
+                            "أفضل من درب ابني! تحول من طفل يرفض الماء إلى سباح واثق بعد 12 حصة. الاحترافية والهدوء في التدريب لا تقدر بثمن."
+                        </p>
+                        <p class="font-bold text-accent-highlight">- م. خالد، أبوظبي</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. الخاتمة وزر الإجراء النهائي -->
+        <section id="contact" class="py-16 bg-primary-blue/90 text-white text-center">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-6">
+                    الخطوة التالية نحو إتقان السباحة
+                </h2>
+                <p class="text-xl mb-10 opacity-90">
+                    القرار لك الآن. لا تؤجل متعة السباحة أو بناء مهارة أساسية لحياتك. أنا هنا لضمان أن تكون كل خطوة تخطوها في الماء خطوة نحو هدفك. الثقة في الماء تبدأ بخطوة على اليابسة، وأنا مستعد لمرافقتك في هذه الرحلة.
+                </p>
+
+                <!-- زر الإجراء النهائي (CTA) - باستخدام لون cta-gold الجديد -->
+                <a href="https://wa.me/9715501961832" target="_blank" class="inline-block cta-button bg-cta-gold text-primary-blue font-extrabold text-xl py-4 px-10 rounded-full hover:bg-[#d8b05e]">
+                    سجل الآن وناقش أهدافك التدريبية مع الكابتن محمد
+                </a>
+                <p class="text-sm mt-4 opacity-70"> (سيتم توجيهك مباشرةً إلى محادثة WhatsApp)</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center text-sm opacity-75">
+            <p>جميع الحقوق محفوظة للكابتن محمد لتدريب السباحة في دبي والإمارات - 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>
